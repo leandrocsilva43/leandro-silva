@@ -8,13 +8,10 @@
     <meta name="description"
         content="Portfólio de Leandro Silva, Desenvolvedor Front-End Júnior com foco em HTML, CSS e JavaScript.">
     <meta name="theme-color" content="#2c3e50">
-    <meta property="og:title" content="Leandro Silva | Desenvolvedor Front-End">
-    <meta property="og:description" content="Portfólio de Leandro Silva, Desenvolvedor Front-End Júnior">
-    <meta property="og:image" content="URL_da_sua_imagem">
-    <meta property="og:url" content="URL_do_seu_site">
-    <meta name="twitter:card" content="summary_large_image">
     <title>Leandro Silva | Desenvolvedor Front-End</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Melhoria: adicionar Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -25,9 +22,31 @@
             <img src="Imagens/18671 657417 03.jpg" alt="Foto de perfil de Leandro Silva - Desenvolvedor Front-End"
                 width="200" height="300" loading="lazy" />
         </div>-->
-        <div>
+        <!-- Navbar para navegação entre páginas -->
+        <nav class="main-nav">
+            <div class="nav-brand">
+                <a href="index.html">Leandro Silva</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="contato.html" class="nav-contact-btn">
+                    <i class="fas fa-envelope"></i> Contato
+                </a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero-content">
             <h1>Leandro Silva</h1>
             <p>Desenvolvedor Front-End Júnior</p>
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                <a href="contato.html" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Entre em Contato
+                </a>
+            </div>
         </div>
     </header>
 
@@ -135,11 +154,24 @@
 
     <footer class="site-footer">
         <div class="footer-content">
-            <a href="mailto:leandro.csilva@hotmail.com.br" class="button-email">Email</a>
-            <a href="https://www.linkedin.com/in/leandro-silva-77266b2a/" class="button-linkedin" target="_blank"
-                rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://wa.me/5545999231610" class="button-whatsapp" target="_blank"
-                rel="noopener noreferrer">WhatsApp</a>
+            <!-- Botão para página de contato -->
+            <a href="contato.html" class="button-contact">
+                <i class="fas fa-comments"></i> Formulário de Contato
+            </a>
+            
+            <div class="footer-social">
+                <a href="mailto:leandro.csilva@hotmail.com.br" class="button-email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/leandro-silva-77266b2a/" class="button-linkedin" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://wa.me/5545999231610" class="button-whatsapp" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
         </div>
         <p class="footer-copyright">© 2025 Leandro Silva. Todos os direitos reservados.</p>
     </footer>
